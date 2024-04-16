@@ -6,7 +6,7 @@ use std::io::prelude::*;
 use reqwest::Url;
 
 fn main() -> Result<(), Box<dyn Error>> {     
-    let base_url = Url::parse("https://mangaonline.biz/capitulo/solo-leveling-capitulo-135/")?;
+    let base_url = Url::parse("https://mangaonline.biz/capitulo/solo-leveling-capitulo-72/")?;
    
     let body = get(base_url.as_str())?.text()?;
     let document = Html::parse_document(&body);
